@@ -20,7 +20,7 @@ So be sure you have installed those bundles before starting
 
 Installation
 ------------
-
+First, you need to install Classification : https://sonata-project.org/bundles/classification/master/doc/reference/installation.html
 Retrieve the bundle with composer:
 
 .. code-block:: bash
@@ -163,7 +163,7 @@ Also, you can determine the resizer to use; the default value is
 At this point, the bundle is not yet ready. You need to generate the correct
 entities for the media::
 
-    php app/console sonata:easy-extends:generate --dest=src SonataMediaBundle
+    php bin/console sonata:easy-extends:generate --dest=src SonataMediaBundle
 
 .. note::
 
@@ -214,7 +214,7 @@ Now, you can build up your database:
 
 .. code-block:: bash
 
-    $ app/console doctrine:schema:[create|update]
+    $ php bin/console doctrine:schema:[create|update]
 
 
 If they are not already created, you need to add specific folder to allow uploads from users:
